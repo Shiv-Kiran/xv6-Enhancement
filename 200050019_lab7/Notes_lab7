@@ -1,0 +1,9 @@
+Understanding pthread synchronization mechanisms - mutexes, CVs and semaphores. 
+
+Que 2: 
+taskqueue.c 
+Main thread reads the number of worker threads as CLI 
+Main thread reads the tasks one by one and enters the task into a queue
+A free thread from the thread pool picks up the task and processes it. 
+Once all task are complete, the main thread joins the other threads and the global variables are printed. 
+Once all tasks are complete, the main thread prints the global vars
